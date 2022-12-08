@@ -1,5 +1,6 @@
 package ucu.edu.ua.demo.item;
 
+import lombok.Getter;
 import lombok.ToString;
 import ucu.edu.ua.demo.flower.FlowerPack;
 import ucu.edu.ua.demo.flower.FlowerType;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @ToString
 public class FlowerBucket extends Item {
+    @Getter
     private List<FlowerPack> flbucket = new ArrayList<FlowerPack>();
     public void addFlowers(FlowerPack flpack) {
         flbucket.add(flpack);
